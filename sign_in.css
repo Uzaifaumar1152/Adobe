@@ -1,14 +1,11 @@
 
-    
-
-
-body{
+.main{
     background-image:  url(images/bg1.jpeg);
     background-size: cover;
     background-repeat: no-repeat; 
-    /* padding-top: 5px; */
-    /* padding-bottom: 10px; */
-    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 .Contact{
     width: 60px;
@@ -20,7 +17,6 @@ body{
     border-radius: 30px;
 }
 #Contact{
-    /* padding: 20px 10px 10px 0px; */
     position: fixed;
     right: 45px;
     bottom: 105px;
@@ -32,7 +28,7 @@ body{
     width: 400px; 
     background-color: hsl(0, 0%, 99%);
     margin-left: 700px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 } 
 a{
@@ -92,13 +88,14 @@ hr{
 #myform{
     position: absolute; 
     right: 210px;
-    bottom: 90px;
+    bottom: 60px;
 }
 button{
     border-radius: 25px;
     background-color: rgb(3, 129, 220);
     border: none;
     padding: 8px 15px;
+
 }
 .bottom{
     margin-left: -10px;
@@ -130,6 +127,9 @@ button{
     justify-content: center;
     align-items: center;
 }
+.hide{
+    display: none;
+}
 #qqqq{
     position: absolute;
     left: 150px;
@@ -140,4 +140,38 @@ button{
 }
 .qqq1{
     font-size: 20px;
+}
+@media(width<450px){
+    .main{
+       width: 400px;
+       padding: 0px;
+    }
+    .div1{
+        width: 90%;
+        margin: 0%;
+        visibility: visible;
+        height: 100%px;
+    }
+    .hide{
+        display: block;
+    }
+    .bottom{
+        position: absolute;
+        left: 20px;
+        width: 60%;
+        height: 20px;
+        margin: 0%;
+        padding-left: 0px;
+    }
+    .Contact{
+        display: none;
+    }
+    #myform{
+        position: absolute;
+        right: -20px;
+        bottom: 40%;
+    }
+    .btn{
+        padding:0%;
+    }
 }

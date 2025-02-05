@@ -7,15 +7,30 @@
     --containerinline-height: 27px;
 }
 #div1{
- display: flex;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    height: 40px;
+    width: 100%; 
+    z-index: 100;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 8px;
+
 }
 nav{
     display: flex;
-    /* font-size: 14px; */
-    
+    padding: 8px;
+  
 }
-.menubar{
+#menubar{
     display: none;
+}
+.menubar1{
+    position: relative;
+    top: 1px;
+
 }
 .nav1{
     margin-left: 10px; 
@@ -37,13 +52,6 @@ nav{
     display: none;
     position: absolute;
 
-}
-.nav3:hover .nav33, .nav4:hover .nav44, .nav2:hover .nav22, .nav1:hover .nav11{
-    display: flex;
-    background-color: rgba(244, 245, 246, 0.93);
-    padding : 20px 20px 20px 20px;
-    left: 60px; 
-    top: 50px;
 }
 .nav3{
     margin-left: 30px;
@@ -117,18 +125,20 @@ nav{
     margin-left: 40px;
 }
 #nav5{
-    margin-left: 510px;
+    position: absolute;
+    right: 118px;
 }
 
-.sign1{
+#sign1{
     display: flex;
     vertical-align: text-top;
     justify-content: center;
     text-align: center;
     align-items: center;
 }
-.sign{
-    margin-left: 15px;
+#sign{
+    position: absolute;
+    right: 20px;
     border: 2px solid rgb(218, 218, 218);
     border-radius: var(--containerborder-radius);
     padding-bottom: 6px;
@@ -137,7 +147,7 @@ nav{
     padding-left: 16px;  
     justify-content: center;
 }
-.sign a{
+#sign a{
     text-decoration: none;
     font-weight: 700;
 }
@@ -311,7 +321,6 @@ section{
     padding-right: 32px;
     text-size-adjust: 100%;
     unicode-bidi: isolate;
-    /* flex: 1; */
     -webkit-font-smoothing:antialiased;
     border-top-right-radius:16px;
     border-top-left-radius:16px;
@@ -334,10 +343,8 @@ section{
     padding-right: 24px;
     text-size-adjust: 100%;
     unicode-bidi: isolate;
-    /* flex: 1;   */
 }
 .div41{
-    /* flex: 1; */
     height: var(--containerheight);
     border-radius: var(--containerborder-radius);
     border: var(--containerborder);
@@ -350,7 +357,6 @@ section{
     margin-left: 50px;
 }
 .div42{
-    /* flex: 1; */
     height: var(--containerheight);
     border-radius: var(--containerborder-radius);
     border: var(--containerborder);
@@ -362,7 +368,6 @@ section{
     margin-right: 20px;
 }
 .div43{ 
-    /* flex: 1; */
     height: var(--containerheight);
     border-radius: var(--containerborder-radius);
     border: var(--containerborder);
@@ -401,7 +406,7 @@ section{
     max-width: 1300px;
     overflow-wrap: break-word;
     unicode-bidi: isolate;
-    width: 1300px;
+    width: 80%;
     color: rgb(80, 80, 80);
 }
 
@@ -421,6 +426,7 @@ color: rgb(51, 68, 254);
     justify-content: center;
     margin: 0px 32px;
     padding: 8px 0px;
+    column-gap: 20px;
 }
 #div7 a{
     padding: 0px 60px 0px 0px;
@@ -429,6 +435,9 @@ color: rgb(51, 68, 254);
 }
 .div71{
     padding-right: 15px;
+}
+.footer{
+    display: flex;
 }
 .bottom{
     margin-left: -10px;
@@ -447,4 +456,134 @@ color: rgb(51, 68, 254);
     padding-left: 12px;
     padding-right: 12px;
 }
+
+@media(width<450px){
+    #menubar{
+        position: absolute;
+        padding: 10px;
+        right: 100px;
+        top: 5px;
+    }
+    .menubar1{
+        position: absolute;
+        padding: 10px;
+        left: 70px;
+        top: 2px;
+    }
+    nav{
+        display: none;
+    }
+    .div3, .div2{
+        display: block;
+        column-gap: 32px;
+        row-gap: 32px;
+        padding: 24px;
+        
+    }
+    .div6{
+        display: block;
+        margin-left: 10px;
+    }
+    .div332 {
+        /* margin-bottom: 10px; */
+        width: 90%;
+        margin-left: 0px;
+        height: 200px;
+    }
+    .div331{
+        width: 87%;
+        margin-left: 0px;
+    }
+    .div21{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .div31{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .div32{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin-left: 0px;  
+    } 
+    .div42{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin-left: 0px;
+    } 
+    .div43{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin-left: 0px;
+    }  
+    .div22{
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        width: 90%;
+        margin-left: 0px;
+    }
+    .div41{
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 0px;
+    }
+    .div7{
+        display: none;
+    }
+    .bottom{
+        display: none;
+    }
+    section{
+       align-items:  center;
+       display: grid;
+       justify-content: center;
+       align-self:center;
+       margin-left: 0px;
+       padding-left: 0%;
+       padding-right: 0%;
+       text-align: center;
+    }
+    .section1{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #sign1{
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+    }
+   #nav5{
+       position: absolute;
+       right: 100px;
+       top: 1px;
+   }
+   #sign{
+    position: absolute;
+    width: max-content;
+    right: 10px;
+    top: -3px;
+   }
+   .dropme{
+    display: none;
+  }
+  .div61:hover .dropme, .div62:hover .dropme, .div63:hover .dropme, .div64:hover .dropme, .div65:hover .dropme{
+      display: block;
+     
+  }
+
+
+
+}
+
+
 

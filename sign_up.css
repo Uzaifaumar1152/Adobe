@@ -148,3 +148,40 @@ button{
     justify-content: center;
     align-items: center;
 }
+@media(width<450px){
+    .main{
+        width: 400px;
+        padding: 0px;
+     }
+     .maindiv1{
+         width: 80%;
+         margin: 0px;
+         visibility: visible;
+         height: 90%px;
+     }
+    .hide{
+        display: block;
+    }
+    .bottom{
+        position: absolute;
+        left: 20px;
+        width: 80%;
+        height: 20px;
+        margin: 0%;
+        padding-left: 0px;
+    }
+    .contact{
+        display: none;
+    }
+    hr{
+        width: 120px;
+    }
+    button{
+        position: absolute;
+        right: 20px;
+        bottom: 66%;
+    }
+    .btn{
+        padding:0% 
+    }
+}
